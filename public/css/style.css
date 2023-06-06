@@ -1,0 +1,139 @@
+body {
+	height: 200px;
+	width: 90%;
+	background-image: linear-gradient(90deg, rgba(187, 255, 239, 1), rgba(236, 237, 203, 1) 86%, rgba(248, 227, 183, 1) 94%, rgba(255, 155, 252, 1));
+}
+
+.button {
+	transition: 1s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 1;
+	transform: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1;
+	text-decoration: none;
+	color: #333333;
+	border-radius: 0px;
+	font-weight: bold;
+	border: 2px solid #333333;
+	transition: 0.3s;
+	box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
+	background-color: #ffffff;
+}
+
+.button:hover {
+	opacity: 1;
+	transform: scale3d(0.95, 0.95, 1);
+	box-shadow: 0 0 #333;
+	color: #fff;
+	background-color: #333;
+}
+
+.delete {
+	border: 2px solid red;
+	box-shadow: 5px 5px 0px 0px red;
+}
+
+.delete:hover {
+	background-color: red;
+	box-shadow: 0 0 red;
+}
+
+#edit {
+	border: 2px solid blue;
+	box-shadow: 5px 5px 0px 0px blue;
+}
+
+#edit:hover {
+	background-color: blue;
+	box-shadow: 0 0 blue;
+}
+
+#complete {
+	border: 2px solid yellow;
+	box-shadow: 5px 5px 0px 0px yellow;
+}
+
+#complete:hover {
+	background-color: yellow;
+	box-shadow: 0 0 yellow;
+	color: gray;
+}
+
+table {
+	padding: 0;
+	margin: 10px;
+	background: #dbebf8;
+}
+
+table th {
+	padding: 0.2em 0.5em;
+	margin: 2em 0;
+	background: #d6ebff;
+	border: dashed 2px white;
+}
+
+table td {
+	padding: 0.2em 0.5em;
+	margin: 2em 0;
+	color: #565656;
+	background: #ffeaea;
+	border: dashed 2px #ffc3c3;
+	border-radius: 8px;
+}
+
+table tr {
+	position: relative;
+	list-style-type: none !important;
+	/*ポチ消す*/
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	margin-bottom: 5px;
+	line-height: 1.5;
+	vertical-align: middle;
+	color: #505050;
+	border-radius: 15px 0px 0px 15px;
+	/*左側の角丸く*/
+}
+
+table tr:before {
+	display: inline-block;
+	vertical-align: middle;
+	/*以下白丸つくる*/
+	content: '';
+	width: 1em;
+	height: 1em;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: 8px;
+}
+
+.alerts {
+	color: red;
+}
+
+#paging {
+	display: flex;
+}
+
+#thispage {
+	margin-right: 15px;
+	margin-left: 15px;
+	font-size: 120%;
+	text-align: center;
+	line-height: 0.95em;
+	font-weight: bold;
+	color: #FFF;
+	text-shadow:
+		0 0 0.05em #F06292,
+		0 0 0.10em #F06292,
+		0 0 0.15em #F06292,
+		0 0 0.30em #F06292;
+	filter: saturate(80%);
+    background-clip: none;
+	-webkit-background-clip: text;
+	-webkit-box-reflect: below -0.25em -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, .6)), to(transparent));
+}
